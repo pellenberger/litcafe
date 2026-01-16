@@ -1,0 +1,236 @@
+/*/////////////////////////////////////////*/
+
+
+/* G A L L E R Y */
+
+@keyframes example {
+    from {
+        opacity: 0.7;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ul#slider {
+    height: 700px;
+    min-height: 700px;
+    margin: 0px 0 0 0!Important;
+    overflow: hidden;
+    position: relative;
+}
+
+ul#slider li {
+    overflow: hidden;
+    height: 700px;
+    min-height: 700px;
+    padding: 21px 0 0 0;
+}
+
+ul#slider li a {
+    height: 700px;
+    min-height: 700px;
+}
+
+ul#slider li a div {
+    max-height: 700px;
+    min-height: 700px;
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+}
+
+ul#slider li a img {
+    max-height: 650px;
+    min-height: 650px;
+    width: auto;
+    margin: 0px auto;
+}
+
+ul#slider li a video {
+    min-height: 600px;
+    max-height: 600px;
+    width: auto;
+}
+
+
+/*CAPTION*/
+
+ul#slider li a div span {
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 100;
+    position: absolute;
+    z-index: 3;
+    top: 650px;
+    margin: 0px 0 0 0;
+    min-width: 200px;
+    left: 0px;
+    text-align: left;
+}
+
+ul#slider li a.navigation-left {
+    background: none;
+    min-height: 100%;
+    min-width: 50%;
+    position: absolute;
+    z-index: 1;
+    cursor: url(/content/cursor-left.png), auto;
+}
+
+ul#slider li a.navigation-right {
+    background: none;
+    min-height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    cursor: url(/content/cursor-right.png), auto;
+}
+
+ul#slider li:target>a.navigation-right {
+    display: block;
+}
+
+ul#slider li:target>a.navigation-left {
+    display: block;
+}
+
+ul#slider div.counter-element {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    right: 0px;
+    z-index: 1000!Important;
+    padding: 10px 20px 10px 10px;
+    overflow: hidden;
+    opacity: 0;
+    background: white;
+    font-size: 0.9rem;
+    z-index: 200;
+}
+
+ul#slider div.counter-element-fake {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    right: 0px;
+    z-index: 1000!Important;
+    padding: 10px 20px 10px 10px;
+    overflow: hidden;
+    opacity: 1;
+    background: white;
+    font-size: 0.9rem;
+    z-index: 200;
+}
+
+ul#slider li a.gallery-nav-button {
+    position: absolute;
+    display: block;
+    top: 95%;
+    left: 20px;
+    z-index: 1000!Important;
+    padding: 0px 0px 0 0px;
+    overflow: hidden;
+    min-width: 10px!Important;
+    min-height: 10px!Important;
+    max-width: 10px!Important;
+    max-height: 10px!Important;
+    border-radius: 10px;
+    background: black;
+    display: none;
+}
+
+ul#slider li:target div.counter-element {
+    opacity: 1;
+    display: none;
+}
+
+ul#slider li:target>a.gallery-nav-button {
+    background: silver;
+}
+
+a.gallery-nav-button:hover {
+    background: silver!Important;
+}
+
+ul#slider img.only-mobile {
+    display: none;
+}
+
+
+/*
+  
+   ___   ___   ___  
+  / _ \ / _ \ / _ \ 
+ | (_) | | | | | | |
+  \__, | | | | | | |
+    / /| |_| | |_| |
+   /_/  \___/ \___/ 
+                    
+                    
+
+
+
+*/
+
+@media screen and (min-width: 0px) and (max-width: 900px) and (orientation:portrait) {
+    ul#slider {
+        overflow: hidden;
+        height: 70vh;
+        min-width: 100%;
+        margin: 0px 0 0 0!Important;
+        display: none;
+    }
+    ul#slider li {
+        min-width: 100%;
+        overflow: hidden;
+        max-height: 100%;
+        min-height: 100%;
+        overflow: hidden;
+    }
+    ul#slider li:target {
+        min-width: 100%;
+        display: block;
+        z-index: 100;
+    }
+    ul#slider li a img {
+        height: auto;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    ul#slider li:target img {
+        height: auto;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-width: 900px) {
+    ul#slider {
+        overflow: hidden;
+        height: 70vh;
+        min-width: 3000px;
+        margin: 0px 0 0 0!Important;
+    }
+    ul#slider li {
+        min-width: 100%;
+        overflow: hidden;
+        max-height: 100%;
+        min-height: 100%;
+        overflow: hidden;
+    }
+    ul#slider li:target {
+        min-width: 100%;
+        display: block;
+        z-index: 100;
+    }
+    ul#slider li img {
+        max-height: 20vh;
+        width: auto;
+    }
+    ul#slider li:target img {
+        max-height: 80vh;
+        width: auto;
+    }
+}

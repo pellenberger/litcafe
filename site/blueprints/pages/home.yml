@@ -1,0 +1,24 @@
+title: home
+files: true
+fields:
+ 
+  title:
+    label: Title
+    type: title
+  richtext:
+    label: Text
+    type:  markdown
+    size: big
+  
+  gallery:
+      label: Slider
+      type: structure
+      style: table
+      fields:
+        gallery_img:
+          label: Image
+          type: image
+        caption:
+          label: caption
+          type: text
+

@@ -1,0 +1,51 @@
+title: poster
+icon: page
+preset: page
+pages: false
+
+
+options:
+  preview: true
+  changeTemplate: false
+  changeSlug: false
+  changeTitle: false
+  changeTemplate: false
+  
+
+
+  
+fields:
+
+  month:
+    label: Months
+    type: text
+
+
+  palette:
+    label: Background-Color
+    type: color-palette
+    options:
+      - rgb(26,41,102)
+      - rgb(255,103,33)
+      - rgb(231,144,136)
+  events:
+      label: Events
+      type: structure
+      max: 5
+      style: table
+      fields:
+        date:
+          label: Date
+          type: text
+        title:
+          label: Title
+          type: text
+        subtitle:
+          label: subtitle
+          type: text
+
+
+
+
+ 
+

@@ -1,0 +1,61 @@
+title: default
+icon: page
+preset: page
+pages: false
+
+
+
+options:
+  preview: false
+  changeTemplate: false
+
+
+
+  
+fields:
+ 
+  title:
+    label: Article title
+    type: text
+
+
+  richtext:
+    label: text
+    type:  markdown
+
+  home_categorie_image:
+    label: home-box image
+    type: files
+    query: page.images
+    max: 1
+
+  show_in_home:
+    label: would you like this page to appear on the homepage?
+    type: toggle 
+ 
+  home_categorie_text:
+    label: home-box text
+    type: markdown
+
+
+  gallery:
+      label: Gallery
+      type: structure
+      style: table
+      fields:
+        gallery_img:
+          type: files
+          query: page.images
+          max: 1
+          caption:
+          label: caption
+          type: text
+
+
+
+files: true 
+  caption:
+    label: Image-Caption
+    type: text
+ 
+
