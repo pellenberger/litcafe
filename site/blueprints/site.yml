@@ -1,0 +1,141 @@
+title: Site
+
+
+tabs:
+  content:
+    label: Content
+    icon: text
+    columns:  
+
+      # main
+      left:
+        width: 2/3
+
+
+        sections:
+          published:
+            headline: Pages
+            type: pages
+            status: all
+            image: false
+
+          draft:
+            headline: Here are the drafts for the news listed and you can create a news article
+            type: pages
+            status: draft
+            image: false
+            create: news
+            empty: No events yet
+            parent: site.find("veranstaltungen")
+            image:
+              query: page.event_image.toFile
+              ratio: 1/1
+              cover: true
+      
+
+
+  # seo tab
+  meta:
+    label: Meta
+    icon: text
+
+    columns:  
+
+      # main
+      left:
+        width: 2/3
+
+
+        fields:
+          sitename:
+            label: Title
+            type: text
+            width: 1/1
+
+          description:
+            label: Description
+            type: text
+            width: 1/1
+
+          facebook:
+            label: Facebook
+            type: url
+            width: 1/2
+
+          instagram:
+            label: Instagram
+            type: url
+            width: 1/2
+
+          newsletter:
+            label: Newsletter
+            type: url
+            width: 1/2
+
+          logo:
+            label: Logo
+            type: files
+            query: site.images
+            multiple: false
+            width: 1/2
+
+          favicon:
+            label: Favicon
+            type: files
+            query: site.images
+            multiple: false
+            width: 1/2
+
+          line:
+            type: line
+
+          adress:
+            label: Adress
+            type: headline
+            numbered: false
+
+          name:
+            label: Name
+            type: text
+
+          street:
+            label: Street
+            type: text
+
+          city:
+            label: City
+            type: text
+
+          telephone:
+            label: Telephone
+            type: text
+
+          email_1:
+            label: E-Mail
+            type: email
+
+          email_2:
+            label: E-Mail
+            type: email
+
+          email_3:
+            label: E-Mail
+            type: email
+
+          website:
+            label: Website
+            type: url
+
+
+      #right
+      right:
+        width: 1/3
+        
+        sections:
+          sidebar:
+            headline: Files
+            type: files
+            layout: list
+
+
+

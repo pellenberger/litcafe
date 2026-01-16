@@ -1,0 +1,45 @@
+title: session
+icon: bolt
+preset: page
+pages: false
+
+
+
+options:
+  preview: false
+  changeTemplate: false
+
+
+
+  
+fields:
+ 
+  title:
+    label: Article title
+    type: text
+
+
+  richtext:
+    label: text
+    type:  markdown
+
+  gallery:
+      label: Gallery
+      type: structure
+      style: table
+      fields:
+        gallery_img:
+          type: files
+          query: page.images
+        caption:
+          label: caption
+          type: text
+
+
+
+files: true 
+  caption:
+    label: Image-Caption
+    type: text
+ 
+

@@ -1,0 +1,39 @@
+title: sessions
+icon: bolt
+
+
+options:
+  preview: false
+  changeTemplate: false
+
+
+columns:
+  # main
+  main:
+    width: 2/3
+
+    sections:
+      drafts:
+        headline: Draft
+        type: pages
+        status: draft
+        layout: list
+        template: session
+        empty: No sessions yet
+        sortBy: date_event_start desc
+        info: " {{ page.title }}"
+        image: false
+
+      published:
+        headline: Published
+        type: pages
+        layout: list
+        status: all
+        template: session
+        empty: No events yet
+        info: " {{ page.title }}"
+        image: false
+
+      
+
+

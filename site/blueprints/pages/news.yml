@@ -1,0 +1,100 @@
+title: news
+icon: 📅
+preset: page
+pages: false
+num: "{{ page.date_event_start.toDate('Ymd') }}"
+
+options:
+  preview: false
+  changeTemplate: false
+
+
+
+fields:
+
+  article_title:
+    label: Article title
+    type: text
+    required: true
+
+  tags:
+    label: Kategorie
+    type: tags
+
+  stil:
+    label: Stil
+    type: tags
+    
+  date_event_start:
+    label: Datum Anfang
+    type:  date
+    width: 1/4
+    required: true
+
+  date_event_end:
+    label: Datum Ende
+    type:  date
+    width: 1/4
+
+  start_time:
+    label: Startzeit
+    type: time
+    interval: 15
+    width: 1/4
+
+  end_time:
+    label: Endzeit
+    type: time
+    interval: 15
+    width: 1/4
+
+  price:
+    label: Preis
+    type: text
+    width: 1/4
+
+  text_full:
+    label: text
+    type:  markdown
+
+
+  event_image:
+    label: Flyer / Foto
+    type: files
+    query: page.images
+    max: 1
+
+  gallery:
+    label: Galerie
+    type: structure
+    style: table
+    fields:
+      gallery_img:
+        label: Bild
+        type: files
+        query: page.images
+      caption:
+        label: Bild-Untertitel
+        type: text
+
+  category:
+    label: Category cultuscope
+    type: select
+    translate: false
+    options:
+      AN: Animation
+      CI: Cirque
+      DA: Danse
+      EX: Exposition
+      LI: Littérature
+      MU: Musique
+      PR: Projection
+      TH: Théâtre
+
+  created:
+    label: created
+    type: date
+    time: true
+    width: 1/2
+    default: now
+    disabled: true
