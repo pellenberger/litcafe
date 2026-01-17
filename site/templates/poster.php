@@ -52,13 +52,9 @@
         </ul>
         <ul>
           <li><h4>Dienstag</h4></li>
-          <li>20:00 MardiJazz</li>
-        </ul>
-        <ul>
+          <li>19:30 MardiPhilo</li>
           <li><h4>Vendredi</h4></li>
           <li>20:00 Konzert</li>
-          <li><h4>Samedi</h4></li>
-          <li>09:30 - 13:30 café et livres</li>
         </ul>
       </div>
     </div>
