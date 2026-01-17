@@ -20,14 +20,6 @@ fields:
     label: Months
     type: text
 
-
-  palette:
-    label: Background-Color
-    type: color-palette
-    options:
-      - rgb(26,41,102)
-      - rgb(255,103,33)
-      - rgb(231,144,136)
   events:
       label: Events
       type: structure
