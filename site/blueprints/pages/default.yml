@@ -21,7 +21,7 @@ fields:
 
   richtext:
     label: text
-    type:  markdown
+    type: textarea
 
   home_categorie_image:
     label: home-box image
@@ -35,7 +35,7 @@ fields:
  
   home_categorie_text:
     label: home-box text
-    type: markdown
+    type: textarea
 
 
   gallery:

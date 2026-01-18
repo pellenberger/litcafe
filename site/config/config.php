@@ -6,20 +6,6 @@ return [
   'languages' => true,
   'url' => '*',
 
-
-  'community.markdown-field.buttons' => ['headlines', 'bold', 'italic', 'divider', 'link', 'email', 'pagelink', 'file', 'divider', 'ul', 'ol'],
-  'community.markdown-field.font' => [
-    'family'  => 'sans-serif',
-    'scaling' => false,
-    'size'    => 'regular',
-  ],
-
-  'community.markdown-field.modals' => true,
-  'community.markdown-field.blank' => false,
-  'community.markdown-field.invisibles' => false,
-
-
-
   'thumbs' => [
     'driver' => 'im',
     'autoOrient' => true
