@@ -5,7 +5,7 @@ pages: false
 num: "{{ page.date_event_start.toDate('Ymd') }}"
 
 options:
-  preview: false
+  preview: true
   changeTemplate: false
 
 
@@ -55,7 +55,7 @@ fields:
 
   text_full:
     label: text
-    type:  markdown
+    type:  textarea
 
 
   event_image:

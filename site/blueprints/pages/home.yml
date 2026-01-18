@@ -7,7 +7,7 @@ fields:
     type: title
   richtext:
     label: Text
-    type:  markdown
+    type:  textarea
     size: big
   
   gallery:
