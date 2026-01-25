@@ -6,7 +6,7 @@ pages: false
 
 
 options:
-  preview: false
+  preview: true
   changeTemplate: false
 
 
