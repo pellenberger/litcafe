@@ -3,7 +3,7 @@ icon: bolt
 
 
 options:
-  preview: false
+  preview: true
   changeTemplate: false
 
 
