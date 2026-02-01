@@ -30,23 +30,27 @@ fields:
     type:  date
     width: 1/4
     required: true
+    translate: false
 
   date_event_end:
     label: Datum Ende
     type:  date
     width: 1/4
+    translate: false
 
   start_time:
     label: Startzeit
     type: time
     interval: 15
     width: 1/4
+    translate: false
 
   end_time:
     label: Endzeit
     type: time
     interval: 15
     width: 1/4
+    translate: false
 
   price:
     label: Preis
@@ -63,6 +67,7 @@ fields:
     type: files
     query: page.images
     max: 1
+    translate: false
 
   gallery:
     label: Galerie
@@ -76,6 +81,7 @@ fields:
       caption:
         label: Bild-Untertitel
         type: text
+    translate: false
 
   category:
     label: Category cultuscope
