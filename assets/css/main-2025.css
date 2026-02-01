@@ -219,8 +219,8 @@ aside div.article-text-wrapper div.article-text ul.tags {
 }
 
 aside div.article-text-wrapper div.article-text ul.tags li:not(:last-child):after {
-    content: ",  ";
-    padding: 0 2px 0 0px;
+    content: "|";
+    padding: 0 5px 0 5px;
 }
 
 aside div.article-text-wrapper {
@@ -318,6 +318,11 @@ body#news article div.article-main {
 
 body#news article div.gallery-wrapper {
     margin: 0px 0 0px 0;
+}
+
+body#news article div.event-details ul.tags li:not(:last-child):after {
+    content: "|";
+    padding: 0 5px 0 5px;
 }
 
 
