@@ -54,6 +54,8 @@
         <li>19:30 MardiPhilo</li>
         <li><h4>Vendredi</h4></li>
         <li>20:00 Konzert</li>
+        <li><h4>Samedi</h4></li>
+        <li>09:30 - 13:30 Café & Bücher</li>
       </ul>
     </div>
   </div>
